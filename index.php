@@ -33,26 +33,7 @@
 
 <div class="website-section" id="websites">
     <div class="container">
-        <video width="100%" height="auto" controls>
-            <source src="videos/1.mp4" type="video/mp4">
-            Sorry, it looks like your browser does not support the video tag!
-            Please refresh the page or try viewing in a different browser.
-        </video>
-        <video width="100%" height="auto" controls>
-            <source src="videos/2.MOV" type="video/mp4">
-            Sorry, it looks like your browser does not support the video tag!
-            Please refresh the page or try viewing in a different browser.
-        </video>
-        <video width="100%" height="auto" controls>
-            <source src="videos/3.mov" type="video/mp4">
-            Sorry, it looks like your browser does not support the video tag!
-            Please refresh the page or try viewing in a different browser.
-        </video>
-        <video width="100%" height="auto" controls>
-            <source src="videos/4.MOV" type="video/mp4">
-            Sorry, it looks like your browser does not support the video tag!
-            Please refresh the page or try viewing in a different browser.
-        </video>
+
     </div>
 </div>
 
