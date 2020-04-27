@@ -174,7 +174,7 @@ body nav.navbar .nav-desktop ul li a.active:after {
   background: black;
 }
 body.scroll {
-  background-color: #191919;
+  background-color: #bb0000;
   transition: 0.75s all ease;
 }
 body.scroll nav.navbar a {
