@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be46b635-4bcc-46c4-b58e-c141a2aa651e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/EE06937D-2783-45A3-A8DA-B416A7649473.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/IMG_1878.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/IMG_4247.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/IMG_4906.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SCSS/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="49c7e1ad-7cbc-4de3-9a23-200dfd8f1671" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,38 +13,41 @@
     </execution>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1PszZeBdQpqGjOnJi5bSsc6LHB3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="ProjectId" id="1aMlbZzTRESMKvL7VQT0Wyr0Ms0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Images" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Images" />
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/videos" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -65,27 +56,39 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="be46b635-4bcc-46c4-b58e-c141a2aa651e" name="Default Changelist" comment="" />
-      <created>1566677648932</created>
+      <changelist id="49c7e1ad-7cbc-4de3-9a23-200dfd8f1671" name="Default Changelist" comment="" />
+      <created>1586553415773</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1566677648932</updated>
-      <workItem from="1566677652421" duration="14124000" />
+      <updated>1586553415773</updated>
+      <workItem from="1586553420231" duration="1461000" />
+      <workItem from="1586690559306" duration="258000" />
+      <workItem from="1587223465779" duration="6889000" />
+      <workItem from="1587411303246" duration="4479000" />
+      <workItem from="1587670854587" duration="5279000" />
+      <workItem from="1587811151935" duration="1244000" />
+      <workItem from="1587900926353" duration="6212000" />
+      <workItem from="1587943197475" duration="7943000" />
+      <workItem from="1587979013844" duration="14698000" />
+      <workItem from="1588018807436" duration="1362000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="WindowStateProjectService">
+    <state x="698" y="354" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588019351492">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="698" y="354" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1588019351492" />
+    <state x="469" y="239" key="SettingsEditor" timestamp="1586553655643">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="469" y="239" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1586553655643" />
+    <state x="732" y="470" width="557" height="281" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1586553653498">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="732" y="470" width="557" height="281" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1586553653498" />
   </component>
 </project>
