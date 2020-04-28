@@ -25,7 +25,7 @@
         function splash(param) {
             var time = param;
             setTimeout(function () {
-                $('#splashscreen').fadeOut();
+                $('#splashscreen').slideUp();
             }, time);
         }
     </script>

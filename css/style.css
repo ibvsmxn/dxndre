@@ -28,6 +28,8 @@
   animation-delay: 0.25s;
   border: 1px solid white;
   padding: 20px 35px;
+  text-align: center;
+  line-height: 1.5em;
 }
 @media screen and (min-width: 768px) {
   #splashscreen h1 {
@@ -174,7 +176,7 @@ body nav.navbar .nav-desktop ul li a.active:after {
   background: black;
 }
 body.scroll {
-  background-color: #bb0000;
+  background-color: #2a2a2a;
   transition: 0.75s all ease;
 }
 body.scroll nav.navbar a {
@@ -200,8 +202,35 @@ body.scroll .navbar button {
   color: white;
   border-color: white;
 }
+body.scroll .website-section a.site-work {
+  font-family: "Lato", sans-serif;
+  background: transparent;
+  padding: 0;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  height: 250px;
+  margin-bottom: 8.333333%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  transition: 0.5s all ease;
+}
+body.scroll .website-section a.site-work:hover {
+  text-decoration: none;
+  background: white;
+  color: black;
+  transition: 0.5s all ease;
+}
+body.scroll .website-section a.site-work span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
 body.end {
-  background-color: #15002b;
+  background-color: #8a0000;
   transition: 0.75s all ease;
 }
 body.end nav.navbar a {
@@ -214,6 +243,33 @@ body.end nav.navbar a.active:after {
   width: 100%;
   background: white;
 }
+body.end .website-section a.site-work {
+  font-family: "Lato", sans-serif;
+  background: transparent;
+  padding: 0;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  height: 250px;
+  margin-bottom: 8.333333%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  transition: 0.5s all ease;
+}
+body.end .website-section a.site-work:hover {
+  text-decoration: none;
+  background: white;
+  color: black;
+  transition: 0.5s all ease;
+}
+body.end .website-section a.site-work span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
 body .logo-section {
   text-align: center;
   text-transform: uppercase;
@@ -224,7 +280,7 @@ body .logo-section h1 {
 }
 body .logo-section h1, body .logo-section span.tagline {
   color: white;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   display: block;
 }
 @media screen and (min-width: 360px) {
@@ -246,15 +302,24 @@ body .jumbotron {
   background-repeat: no-repeat;
   background-color: transparent;
   border-radius: 0;
+  transition: 0.5s all ease;
 }
 @media screen and (min-width: 992px) {
   body .jumbotron {
     background-size: 600px;
+    transition: 0.5s all ease;
   }
 }
 @media screen and (min-width: 1200px) {
   body .jumbotron {
+    background-size: 700px;
+    transition: 0.5s all ease;
+  }
+}
+@media screen and (min-width: 1400px) {
+  body .jumbotron {
     background-size: contain;
+    transition: 0.5s all ease;
   }
 }
 body .jumbotron.main-banner {
@@ -324,38 +389,86 @@ body .jumbotron span.tagline {
 }
 @media screen and (min-width: 768px) {
   body .jumbotron {
-    height: 800px;
+    min-height: 800px;
   }
 }
-body #bio {
+body img.story-img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  filter: grayscale(1);
+  transition: 0.5s all ease;
+}
+@media screen and (min-width: 576px) {
+  body img.story-img {
+    max-width: 75%;
+  }
+}
+@media screen and (min-width: 982px) {
+  body img.story-img {
+    max-width: 50%;
+  }
+}
+body img.story-img:hover {
+  filter: grayscale(0);
+  box-shadow: 0px 7px 15px -10px black;
+  transition: 0.5s all ease;
+}
+body #bio,
+body #bio-2 {
   background-color: transparent;
 }
-body #bio h2 {
+body #bio h2,
+body #bio-2 h2 {
   color: black;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
-body #bio p {
+body #bio p,
+body #bio-2 p {
   color: black;
   font-size: 18px;
   margin-bottom: 15px;
 }
-body .website-section video {
+body #bio p a,
+body #bio-2 p a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.375);
+  transition: 0.5s all ease;
+}
+body #bio p a:hover,
+body #bio-2 p a:hover {
+  text-decoration: none;
+  border-color: rgba(0, 0, 0, 0.66);
+  transition: 0.5s all ease;
+}
+body .website-section a.site-work {
+  font-family: "Lato", sans-serif;
+  background: transparent;
+  padding: 0;
+  border: 1px solid black;
+  color: black;
+  text-align: center;
+  height: 250px;
+  margin-bottom: 8.333333%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  transition: 0.5s all ease;
+}
+body .website-section a.site-work:hover {
+  text-decoration: none;
+  background: black;
+  color: white;
+  transition: 0.5s all ease;
+}
+body .website-section a.site-work span {
   display: block;
-  outline: none;
-  width: 100%;
-  max-width: 768px;
-  margin: 25px auto;
-}
-@media screen and (min-width: 576px) {
-  body .website-section video {
-    width: 75%;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  body .website-section video {
-    margin-left: 25%;
-  }
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
 }
 body .contact-section .content {
   padding: 15px 30px;
