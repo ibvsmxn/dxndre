@@ -52,7 +52,7 @@
     <div class="container description col-11 col-md-8 col-lg-6">
 
         <div class="row">
-            <a class="site-work col-12 col-md-5 offset-md-1" href="http://http://tiarochelle.herokuapp.com/" target="_blank">
+            <a class="site-work col-12 col-md-5 offset-md-1" href="http://tiarochelle.herokuapp.com" target="_blank">
                 Tia Rochelle
                 <span>Freelance</span>
             </a>
