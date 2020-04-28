@@ -234,14 +234,14 @@ body.end {
   transition: 0.75s all ease;
 }
 body.end nav.navbar a {
-  color: white;
+  color: black;
 }
 body.end nav.navbar a:after {
-  background: white !important;
+  background: black !important;
 }
 body.end nav.navbar a.active:after {
   width: 100%;
-  background: white;
+  background: black;
 }
 body.end .website-section a.site-work {
   font-family: "Lato", sans-serif;

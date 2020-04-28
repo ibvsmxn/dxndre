@@ -275,16 +275,16 @@ body {
     transition: 0.75s all ease;
 
     nav.navbar a {
-      color: white;
+      color: black;
 
       &:after {
-        background: white !important;
+        background: black !important;
       }
 
       &.active {
         &:after {
           width: 100%;
-          background: white;
+          background: black;
         }
       }
     }
