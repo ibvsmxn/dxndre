@@ -154,7 +154,7 @@
                         <div class="modal-body">
                             <p>Hiring me to build your site is a great choice in my opinion (well, of course it would be!) But in all seriousness, I'm all about transparency. I'm a developer you can trust to stick with you from the inital call right through to your launch.</p>
                             <p>All my sites are built to modern standards, so they'll look and work beautifully across all devices (Mobile, Tablet and Desktop)</p>
-                            <p>So if you'd like to have a laid-back chat over your upcoming project, book a time in my diary and let's talk! Formalities are for 9-5's. On our calls, <b>sit back and relax.</b> The best collaborations are done when there's no stress or pressure involved - so don't worry if you have no idea what you want yet! We'll work towards a solution that works for you. (Yes, including budgets)</p>
+                            <p>So if you'd like to have a laid-back chat over your upcoming project, book a time in my diary and let's talk! Formalities are for 9-5's. On our calls, <b>sit back and relax.</b>We'll work towards a solution that works for you. (Yes, including budgets)</p>
                         </div>
                         <div class="alert alert-success" role="alert">
                             Now taking on clients with a launch date of August 2021 onwards!

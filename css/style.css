@@ -25,7 +25,7 @@
   font-size: 1.5em;
   text-transform: uppercase;
   animation: fadeInSplash 0.25s forwards;
-  animation-delay: 0.25s;
+  animation-delay: 0.5s;
   padding: 20px 35px;
   text-align: center;
   line-height: 1.5em;
@@ -33,6 +33,7 @@
 @media screen and (min-width: 768px) {
   #splashscreen h1 {
     letter-spacing: 12px;
+    animation-delay: 0.25s;
   }
 }
 
@@ -300,48 +301,6 @@ body.end .website-section a.site-work span {
   font-size: 12px;
   letter-spacing: 3px;
 }
-body.end .cta-section {
-  background: white;
-  border: 1px solid white;
-  padding: 50px;
-}
-body.end .cta-section h3 {
-  color: black;
-}
-body.end .cta-section p {
-  text-align: center;
-  font-size: 1.25em;
-  color: black;
-}
-body.end .cta-section a {
-  color: black;
-  border: 1px solid black;
-  padding: 10px;
-  display: grid;
-  margin: 0 auto;
-  width: 200px;
-  text-align: center;
-}
-body.end .cta-section a:hover {
-  background: black;
-  color: white;
-}
-body.end .cta-section .button-section {
-  display: flex;
-}
-body.end .cta-section .button-section button {
-  background: white;
-  border-radius: 0;
-  border: 1px solid black;
-  color: black;
-  padding: 50px 10px;
-  width: 50%;
-  margin: 20px;
-}
-body.end .cta-section .button-section button:hover {
-  background: black;
-  color: white;
-}
 body.end h3 {
   color: white;
   font-size: 2em;
@@ -354,6 +313,64 @@ body.end h3.invite {
 body.end .boxed {
   background: white;
   color: black;
+}
+body .cta-section {
+  background: white;
+  border: 1px solid white;
+  padding: 20px;
+}
+@media screen and (min-width: 768px) {
+  body .cta-section {
+    padding: 50px;
+  }
+}
+body .cta-section h3 {
+  color: black;
+}
+body .cta-section p {
+  text-align: center;
+  font-size: 1.25em;
+  color: black;
+}
+body .cta-section a {
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  display: grid;
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+}
+body .cta-section a:hover {
+  background: black;
+  color: white;
+}
+body .cta-section .button-section {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  body .cta-section .button-section {
+    display: flex;
+  }
+}
+body .cta-section .button-section button {
+  background: white;
+  border-radius: 0;
+  border: 1px solid black;
+  color: black;
+  padding: 50px 10px;
+  width: 100%;
+  margin: 10px 0;
+}
+@media screen and (min-width: 768px) {
+  body .cta-section .button-section button {
+    margin: 20px;
+    width: 50%;
+  }
+}
+body .cta-section .button-section button:hover {
+  background: black;
+  color: white;
 }
 body .logo-section {
   text-align: left;
@@ -414,17 +431,19 @@ body .jumbotron.main-banner {
   height: 100vh;
   background-position: 32vw 0;
   background-size: 100vh;
+  animation-delay: 0.5s;
 }
 @media screen and (min-width: 768px) {
   body .jumbotron.main-banner {
     height: 500px;
-    background-position: right;
+    background-position: 45vw;
   }
 }
 @media screen and (min-width: 992px) {
   body .jumbotron.main-banner {
     height: 100%;
     max-height: 900px;
+    background-position: right;
   }
 }
 body .jumbotron .content {
