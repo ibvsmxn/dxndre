@@ -2,7 +2,7 @@
 
 <!-- Top Section -->
 
-<div class="jumbotron main-banner" style="background-image: url(images/me.png);">
+<div class="jumbotron main-banner" style="background-image: url(images/me.png);" id="home">
     <div class="content container">
         <div class="logo-section">
             <h1>D'André <br>Phillips</h1>
@@ -45,7 +45,7 @@
         <h3>I do other things too...</h3>
 
         <p>I'm currently an IT Manager at <a href="http://www.empowerlac.co.uk">Project: Empower</a> where I oversee their online presence, built and maintain their website, and currently is (and will probably be the only) a voluntary role, just for the sake of doing something for charity.</p>
-        <p>Moving away from IT, I currently work event days at Wembley Stadium as part of the Customer Engagement Team (Guest Services). Chances are, you'll see me at Club Wembley Level 2.
+        <p>Moving away from IT, I currently work event days at Wembley Stadium as part of the Customer Engagement Team (Guest Services). Chances are, you'll see me at Club Wembley Level 2. As of May 2021 - I got promoted to a Supervisor, so you may see me about with my clipboard 😅
         <p>I do freelance photography, I've been hired for birthday parties, sporting events, and portrait shoots.
         <p>With that being said, as much as I get behind the camera, I get in front of it too - I model on a freelance basis, but currently unsigned (although that might be likely to change once lockdown's over). So far, I've done modeling for streetwear brand RJF Clothing and suit jacket brand Belezar.
     </div>

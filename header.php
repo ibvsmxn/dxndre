@@ -27,7 +27,7 @@
 
 </head>
 
-<body onload="splash(1000)" data-spy="scroll" data-target="#home" data-offset="0">
+<body onload="splash(1000)" data-spy="scroll" data-target="#home" data-offset="0" id="home">
 
     <div id="splashscreen">
         <h1>D'André Phillips</h1>
@@ -41,7 +41,7 @@
         }
     </script>
 
-    <nav class="navbar navbar-expand-lg" id="home">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <div class="logo-section">
@@ -55,7 +55,7 @@
         <div class="nav-desktop collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link active" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#bio">Bio</a>
