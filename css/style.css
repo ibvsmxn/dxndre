@@ -100,6 +100,11 @@ body nav.navbar .navbar-toggler:focus, body nav.navbar .navbar-toggler:focus-wit
 body nav.navbar a {
   color: black;
 }
+@media screen and (min-width: 992px) {
+  body nav.navbar a {
+    color: black;
+  }
+}
 body nav.navbar a:hover {
   color: rgba(0, 0, 0, 0.66);
 }
@@ -124,6 +129,27 @@ body nav.navbar a h1:hover {
   color: black;
   border-color: black;
 }
+body nav.navbar .nav-desktop {
+  height: calc(100vh - 53px);
+  display: flex;
+  position: absolute;
+  top: 53px;
+  left: 100%;
+  z-index: 100;
+  width: 100%;
+  background: #fff;
+  transition: 0.5s all ease;
+}
+@media screen and (min-width: 576px) {
+  body nav.navbar .nav-desktop {
+    height: calc(100vh - 64px);
+    top: 64px;
+  }
+}
+body nav.navbar .nav-desktop.show {
+  left: 0;
+  transition: 0.5s all ease;
+}
 @media screen and (min-width: 992px) {
   body nav.navbar .nav-desktop {
     height: 100vh;
@@ -134,6 +160,8 @@ body nav.navbar a h1:hover {
     align-items: center;
     justify-content: center;
     z-index: 10;
+    background: transparent;
+    width: inherit;
   }
 }
 body nav.navbar .nav-desktop ul {
@@ -145,6 +173,7 @@ body nav.navbar .nav-desktop ul {
   body nav.navbar .nav-desktop ul {
     margin-left: 75%;
     text-align: left;
+    background: white;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -159,6 +188,7 @@ body nav.navbar .nav-desktop ul li {
 }
 body nav.navbar .nav-desktop ul li a {
   padding-bottom: 10px;
+  font-weight: 600;
 }
 body nav.navbar .nav-desktop ul li a:after {
   content: "";
@@ -171,8 +201,13 @@ body nav.navbar .nav-desktop ul li a:after {
 }
 body nav.navbar .nav-desktop ul li a:hover:after {
   width: 100%;
-  background: black;
+  background: white;
   transition: 0.5s all ease;
+}
+@media screen and (min-width: 768px) {
+  body nav.navbar .nav-desktop ul li a:hover:after {
+    background: black;
+  }
 }
 body nav.navbar .nav-desktop ul li a.active:after {
   width: 100%;
@@ -182,15 +217,17 @@ body.scroll {
   background-color: #2a2a2a;
   transition: 0.75s all ease;
 }
-body.scroll nav.navbar a {
-  color: white;
-}
-body.scroll nav.navbar a:after {
-  background: white !important;
-}
-body.scroll nav.navbar a.active:after {
-  width: 100%;
-  background: white;
+@media screen and (min-width: 992px) {
+  body.scroll nav.navbar a {
+    color: white;
+  }
+  body.scroll nav.navbar a:after {
+    background: white !important;
+  }
+  body.scroll nav.navbar a.active:after {
+    width: 100%;
+    background: white;
+  }
 }
 body.scroll .navbar {
   background-color: #191919;
@@ -203,7 +240,12 @@ body.scroll .navbar h1 {
 }
 body.scroll .navbar button {
   color: white;
-  border-color: white;
+}
+@media screen and (min-width: 992px) {
+  body.scroll .navbar ul {
+    background: #2a2a2a !important;
+    transition: 0.75s all ease;
+  }
 }
 body.scroll #bio * *, body.scroll #bio-2 * * {
   transition: 0.5s all ease;
@@ -226,12 +268,16 @@ body.scroll .website-section a.site-work {
   color: white;
   text-align: center;
   height: 200px;
-  margin-bottom: 8.333333%;
   display: grid;
   align-items: center;
   justify-content: center;
   font-size: 22px;
   transition: 0.5s all ease;
+}
+@media screen and (min-width: 768px) {
+  body.scroll .website-section a.site-work {
+    margin-bottom: 8.333333%;
+  }
 }
 body.scroll .website-section a.site-work:hover {
   text-decoration: none;
@@ -258,17 +304,22 @@ body.end nav.navbar h1 {
 }
 body.end nav.navbar button {
   color: white;
-  border-color: white;
 }
-body.end nav.navbar a {
-  color: white;
+@media screen and (min-width: 992px) {
+  body.end nav.navbar a {
+    color: white;
+  }
+  body.end nav.navbar a:after {
+    background: white !important;
+  }
+  body.end nav.navbar a.active:after {
+    width: 100%;
+    background: white;
+  }
 }
-body.end nav.navbar a:after {
-  background: white !important;
-}
-body.end nav.navbar a.active:after {
-  width: 100%;
-  background: white;
+body.end nav ul {
+  background: transparent !important;
+  transition: 0.75s all ease;
 }
 body.end .website-section a.site-work {
   font-family: "jost", sans-serif;
@@ -278,12 +329,16 @@ body.end .website-section a.site-work {
   color: white;
   text-align: center;
   height: 200px;
-  margin-bottom: 8.333333%;
   display: grid;
   align-items: center;
   justify-content: center;
   font-size: 22px;
   transition: 0.5s all ease;
+}
+@media screen and (min-width: 768px) {
+  body.end .website-section a.site-work {
+    margin-bottom: 8.333333%;
+  }
 }
 body.end .website-section a.site-work.upcoming {
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -303,10 +358,8 @@ body.end .website-section a.site-work span {
 }
 body.end h3 {
   color: white;
-  font-size: 2em;
 }
 body.end h3.invite {
-  text-align: center;
   width: 100%;
   display: block;
 }
@@ -318,14 +371,17 @@ body .cta-section {
   background: white;
   border: 1px solid white;
   padding: 20px;
+  margin-top: 10%;
 }
 @media screen and (min-width: 768px) {
   body .cta-section {
     padding: 50px;
+    margin-top: 0;
   }
 }
 body .cta-section h3 {
   color: black;
+  text-align: center;
 }
 body .cta-section p {
   text-align: center;
@@ -348,7 +404,7 @@ body .cta-section a:hover {
 body .cta-section .button-section {
   display: block;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   body .cta-section .button-section {
     display: flex;
   }
@@ -361,16 +417,19 @@ body .cta-section .button-section button {
   padding: 50px 10px;
   width: 100%;
   margin: 10px 0;
+  font-size: 1.25em;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   body .cta-section .button-section button {
     margin: 20px;
     width: 50%;
   }
 }
-body .cta-section .button-section button:hover {
-  background: black;
+body .cta-section .button-section button:hover, body .cta-section .button-section button:active {
+  background-color: black;
   color: white;
+  outline: none;
+  box-shadow: none;
 }
 body .logo-section {
   text-align: left;
@@ -456,7 +515,12 @@ body .jumbotron .content {
 }
 body .jumbotron .content .logo-section h1 {
   font-size: 4.5em;
-  color: black;
+  color: #ababab;
+}
+@media screen and (min-width: 768px) {
+  body .jumbotron .content .logo-section h1 {
+    color: black;
+  }
 }
 body .jumbotron .content.description {
   padding: 15px;
@@ -562,12 +626,16 @@ body .website-section a.site-work {
   color: black;
   text-align: center;
   height: 200px;
-  margin-bottom: 8.333333%;
   display: grid;
   align-items: center;
   justify-content: center;
   font-size: 22px;
   transition: 0.5s all ease;
+}
+@media screen and (min-width: 768px) {
+  body .website-section a.site-work {
+    margin-bottom: 8.333333%;
+  }
 }
 body .website-section a.site-work:hover {
   text-decoration: none;
@@ -589,7 +657,7 @@ body .contact-section .jumbotron {
 }
 @media screen and (max-width: 767px) {
   body .contact-section .jumbotron {
-    margin: 0;
+    margin: 0 auto;
     padding-bottom: 0;
   }
 }
@@ -631,10 +699,16 @@ body .contact-section ul li {
   padding: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-align: center;
 }
 @media screen and (min-width: 576px) {
   body .contact-section ul li {
     letter-spacing: 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body .contact-section ul li {
+    text-align: left;
   }
 }
 body .contact-section ul li i {
