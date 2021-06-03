@@ -58,9 +58,7 @@ body nav.navbar {
   padding: 5px 0;
   margin: 0 auto;
   position: fixed;
-  background: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+  background: white;
   width: 100%;
   z-index: 100;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
@@ -166,12 +164,19 @@ body nav.navbar .nav-desktop.show {
 }
 body nav.navbar .nav-desktop ul {
   margin: 0 auto;
+  margin-top: -53px;
   text-align: center;
   max-width: 300px;
+}
+@media screen and (min-width: 576px) {
+  body nav.navbar .nav-desktop ul {
+    margin-top: -64px;
+  }
 }
 @media screen and (min-width: 992px) {
   body nav.navbar .nav-desktop ul {
     margin-left: 75%;
+    margin-top: 0;
     text-align: left;
     background: white;
   }
@@ -268,6 +273,7 @@ body.scroll .website-section a.site-work {
   color: white;
   text-align: center;
   height: 200px;
+  padding: 25px;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -296,14 +302,26 @@ body.end {
   transition: 0.75s all ease;
 }
 body.end nav.navbar {
-  background: rgba(112, 14, 1, 0.5);
+  background: white;
+}
+@media screen and (min-width: 992px) {
+  body.end nav.navbar {
+    background: rgba(112, 14, 1, 0.5);
+  }
+  body.end nav.navbar h1 {
+    color: white;
+    border-color: white;
+  }
+  body.end nav.navbar button {
+    color: white;
+  }
 }
 body.end nav.navbar h1 {
-  color: white;
-  border-color: white;
+  color: black;
+  border-color: black;
 }
 body.end nav.navbar button {
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 992px) {
   body.end nav.navbar a {
@@ -329,6 +347,7 @@ body.end .website-section a.site-work {
   color: white;
   text-align: center;
   height: 200px;
+  padding: 25px;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -368,10 +387,12 @@ body.end .boxed {
   color: black;
 }
 body .cta-section {
-  background: white;
-  border: 1px solid white;
-  padding: 20px;
+  background: #151515;
+  border: 1px solid transparent;
+  padding: 50px 20px;
   margin-top: 10%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 150px -75px #272727;
 }
 @media screen and (min-width: 768px) {
   body .cta-section {
@@ -380,7 +401,7 @@ body .cta-section {
   }
 }
 body .cta-section h3 {
-  color: black;
+  color: white;
   text-align: center;
 }
 body .cta-section p {
@@ -403,6 +424,7 @@ body .cta-section a:hover {
 }
 body .cta-section .button-section {
   display: block;
+  margin-top: 35px;
 }
 @media screen and (min-width: 992px) {
   body .cta-section .button-section {
@@ -410,26 +432,31 @@ body .cta-section .button-section {
   }
 }
 body .cta-section .button-section button {
-  background: white;
+  background: #1f1f1f;
   border-radius: 0;
-  border: 1px solid black;
-  color: black;
+  border: 1px solid transparent;
+  color: white;
   padding: 50px 10px;
   width: 100%;
   margin: 10px 0;
   font-size: 1.25em;
+  transition: 0.75s all ease;
 }
 @media screen and (min-width: 992px) {
   body .cta-section .button-section button {
     margin: 20px;
     width: 50%;
   }
+  body .cta-section .button-section button:hover {
+    transform: scale(1.0625);
+    transition: 0.25s all ease;
+  }
 }
 body .cta-section .button-section button:hover, body .cta-section .button-section button:active {
-  background-color: black;
-  color: white;
+  background-color: white !important;
+  color: black;
   outline: none;
-  box-shadow: none;
+  box-shadow: none !important;
 }
 body .logo-section {
   text-align: left;
@@ -576,6 +603,7 @@ body .story-img {
   filter: grayscale(1);
   transition: 0.5s all ease;
   pointer-events: none;
+  box-shadow: 0px 0px 150px -75px #27272791;
 }
 body .story-img:hover {
   filter: grayscale(0);
@@ -626,15 +654,17 @@ body .website-section a.site-work {
   color: black;
   text-align: center;
   height: 200px;
+  padding: 25px;
   display: grid;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  font-size: 26px !important;
   transition: 0.5s all ease;
 }
 @media screen and (min-width: 768px) {
   body .website-section a.site-work {
     margin-bottom: 8.333333%;
+    border-radius: 15px;
   }
 }
 body .website-section a.site-work:hover {
