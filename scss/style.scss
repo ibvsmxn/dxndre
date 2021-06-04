@@ -566,7 +566,7 @@ body {
       display: block;
       margin-top: 35px;
 
-      @media screen and (min-width: 992px) {
+      @media screen and (min-width: 1200px) {
         display: flex;
       }
 
@@ -581,7 +581,7 @@ body {
         font-size: 1.25em;
         transition: 0.75s all ease;
 
-        @media screen and (min-width: 992px) {
+        @media screen and (min-width: 1200px) {
           margin: 20px;
           width: 50%;
 

@@ -473,7 +473,7 @@ body .cta-section .button-section {
   display: block;
   margin-top: 35px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   body .cta-section .button-section {
     display: flex;
   }
@@ -489,7 +489,7 @@ body .cta-section .button-section button {
   font-size: 1.25em;
   transition: 0.75s all ease;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   body .cta-section .button-section button {
     margin: 20px;
     width: 50%;
