@@ -66,9 +66,10 @@ body {
     padding: 5px 0;
     margin: 0 auto;
     position: fixed;
-    background: rgba(255,255,255,0.5);
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
+    background: white;
+    // background: rgba(255,255,255,0.5);
+    // -webkit-backdrop-filter: blur(20px);
+    // backdrop-filter: blur(20px);
     width: 100%;
     z-index: 100;
     border-bottom: 1px solid rgba(0, 0, 0, 0.07);
@@ -96,14 +97,55 @@ body {
       }
 
       .navbar-toggler-icon {
-        display: flex;
+        display: inline;
         align-items: center;
         justify-content: center;
+        width: 2em;
+
+        .line {
+          background: black;
+          height: 4px;
+          width: 1.25em;
+          margin: 3.33px 0;
+          display: block;
+          transition: 0.5s all ease;
+
+          &:nth-of-type(2) {
+            width: 1.75em;
+            float: right;
+          }
+        }
+
+        @media screen and (min-width: 992px) {
+          &:hover {
+            transition: 0.5s all ease;
+            .line {
+              width: 1.25em;
+    
+              &:nth-of-type(2) {
+                width: 1.75em;
+              }
+            }
+          }
+        }
+        
       }
 
       &:focus,
       &:focus-within {
         outline: 0;
+      }
+
+      &.collapsed {
+        transition: 0.5s all ease;
+        
+        .line {
+          width: 1.75em;
+
+          &:nth-of-type(2) {
+            width: 1.25em;
+          }
+        }
       }
     }
 
@@ -180,11 +222,17 @@ body {
 
       ul {
         margin: 0 auto;
+        margin-top: -53px;
         text-align: center;
         max-width: 300px;
 
+        @media screen and (min-width: 576px) {
+          margin-top: -64px;
+        }
+
         @media screen and (min-width: 992px) {
           margin-left: 75%;
+          margin-top: 0;
           text-align: left;
           background: white;
         }
@@ -278,6 +326,12 @@ body {
           transition: 0.75s all ease;
         }
       }
+
+      .navbar-toggler-icon {
+        .line {
+          background: white !important;
+        }
+      }
     }
 
     #bio, #bio-2 {
@@ -312,6 +366,7 @@ body {
           color: white;
           text-align: center;
           height: 200px;
+          padding: 25px;
           display: grid;
           align-items: center;
           justify-content: center;
@@ -339,6 +394,20 @@ body {
       }
     }
 
+    .nav-desktop {
+      @media screen and (max-width: 991px) {
+        background: #1a1a1a !important;
+      }
+
+      a {
+        color: white !important;
+
+        &:after {
+          background: white !important;
+        }
+      }
+    }
+
   }
 
   &.end {
@@ -346,15 +415,28 @@ body {
     transition: 0.75s all ease;
 
     nav.navbar {
-      background: rgba(112, 14, 1, 0.5);
+      background: white;
+
+      @media screen and (min-width: 992px) {
+        background: rgba(112, 14, 1, 0.5);
+
+        h1 {
+          color: white;
+          border-color: white;
+        }
+  
+        button {
+          color: white;
+        }
+      }
 
       h1 {
-        color: white;
-        border-color: white;
+        color: black;
+        border-color: black;
       }
 
       button {
-        color: white;
+        color: black;
       }
     }
 
@@ -393,6 +475,7 @@ body {
           color: white;
           text-align: center;
           height: 200px;
+          padding: 25px;
           display: grid;
           align-items: center;
           justify-content: center;
@@ -441,10 +524,12 @@ body {
   }
 
   .cta-section {
-    background: white;
-    border: 1px solid white;
-    padding: 20px;
+    background: #151515;
+    border: 1px solid transparent;
+    padding: 50px 20px;
     margin-top: 10%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 150px -75px #272727;
 
     @media screen and (min-width: 768px) {
       padding: 50px;
@@ -452,7 +537,7 @@ body {
     }
 
     h3 {
-      color: black;
+      color: white;
       text-align: center;
     }
 
@@ -479,32 +564,39 @@ body {
 
     .button-section {
       display: block;
+      margin-top: 35px;
 
       @media screen and (min-width: 992px) {
         display: flex;
       }
 
       button {
-        background: white;
+        background: #1f1f1f;
         border-radius: 0;
-        border: 1px solid black;
-        color: black;
+        border: 1px solid transparent;
+        color: white;
         padding: 50px 10px;
         width: 100%;
         margin: 10px 0;
         font-size: 1.25em;
+        transition: 0.75s all ease;
 
         @media screen and (min-width: 992px) {
           margin: 20px;
           width: 50%;
+
+          &:hover {
+            transform: scale(1.0625);
+            transition: 0.25s all ease;
+          }
         }
 
         &:hover,
         &:active {
-          background-color: black;
-          color: white;
+          background-color: white !important;
+          color: black;
           outline: none;
-          box-shadow: none;
+          box-shadow: none !important;
         }
       }
     }
@@ -580,6 +672,9 @@ body {
       @media screen and (min-width: 992px) {
         height: 100%;
         max-height: 900px;
+      }
+
+      @media screen and (min-width: 1200px) {
         background-position: right;
       }
     }
@@ -659,6 +754,7 @@ body {
     filter: grayscale(1);
     transition: 0.5s all ease;
     pointer-events: none;
+    box-shadow: 0px 0px 150px -75px #27272791;
 
     &:hover {
       filter: grayscale(0);
@@ -713,14 +809,16 @@ body {
         color: black;
         text-align: center;
         height: 200px;
+        padding: 25px;
         display: grid;
         align-items: center;
         justify-content: center;
-        font-size: 22px;
+        font-size: 26px !important;
         transition: 0.5s all ease;
 
         @media screen and (min-width: 768px) {
           margin-bottom: 8.333333%;
+          border-radius: 15px;
         }
 
         &:hover {
